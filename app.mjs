@@ -14,15 +14,6 @@ app.get("/", (_req, res) => {
   });
 });
 
-app.get("/profiles", (_req, res) => {
-  return res.json({
-    data: {
-      name: "john",
-      age: 20,
-    },
-  });
-});
-
 app.listen(port, () => {
   console.log(`Server is running at ${port}`);
 });
